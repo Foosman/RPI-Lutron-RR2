@@ -1,0 +1,11 @@
+telnet_script calling format:
+-----------------------------
+telnet_script <ip_address_of_main_repeater> <login> <password> <"Lutron Command">
+
+Examples:
+-----------------------------
+This example turns the dimmer with integration id 27 to 0%, i.e-  Turns the light off
+telnet_script 192.168.0.115 lutron integration "#OUTPUT,27,1,0" 
+
+This example turns the dimmer with integration id 27 to 100%, i.e- Turns the light on
+elnet_script 192.168.0.115 lutron integration "#OUTPUT,27,1,100" 

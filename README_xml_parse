@@ -1,0 +1,8 @@
+compile command:
+----------------
+gcc -o xml_parse xml_parse.c
+
+execution command:
+------------------
+./xml_parse <ip_address_of_main_repeater>
+example: ./xml_parse 192.168.0.115
