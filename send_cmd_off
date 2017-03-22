@@ -1,0 +1,1 @@
+telnet_script 192.168.0.115 lutron integration "#OUTPUT,27,1,0" 

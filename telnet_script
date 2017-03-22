@@ -1,0 +1,21 @@
+#!/usr/bin/expect
+set timeout 20
+set ip [lindex $argv 0]
+set login [lindex $argv 1]
+set password [lindex $argv 2]
+set cmd [lindex $argv 3]
+spawn telnet $ip
+expect "login:"
+sleep 0.2;
+send "$login\r"
+expect "password:"
+sleep 0.2;
+send "$password\r"
+expect "GNET>"
+sleep 0.1;
+send "$cmd\r"
+sleep 0.2
+send \x1D
+sleep 0.2
+send "quit\r"
+interact
